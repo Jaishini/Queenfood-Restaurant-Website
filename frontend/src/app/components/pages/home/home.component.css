@@ -1,0 +1,91 @@
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+li a{
+  height: 19.0rem;
+  width: 18rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: black;
+}
+
+li a:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+li a img{
+  object-fit: cover;
+  height: 10rem;
+}
+
+.content{
+  margin-top: 0.2rem;
+  padding: 0.4rem 1rem;
+  position: relative;
+  height: 4rem;
+}
+
+.favorite{
+  position: sticky;
+  top: 1.0rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: #d80d0d;
+}
+
+.favorite.not{
+  color: grey;
+}
+
+.stars{
+  margin-bottom: 0.4rem;
+}
+
+.product-item-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.origins{
+  flex: 8;
+}
+
+.origins span{
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  display: inline-block;
+  font-size: 0.8rem;
+  color: grey;
+  margin-right: 0.3rem;
+  padding: 0 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.cook-time{
+  font-size: 0.9rem;
+  flex: 3;
+  text-align: left;
+}
+
+.price{
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  background: white;
+  padding: 0.1rem 100% 0 0;
+  color: #d80d0d;
+  margin-top: 1.0rem;
+  font-size: 1.0rem;
+}
