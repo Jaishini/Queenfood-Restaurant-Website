@@ -9,9 +9,10 @@ import { Tag } from 'src/app/shared/models/Tag';
 })
 export class TagsComponent implements OnInit {
   tags?:Tag[];
-  constructor(foodService:FoodService) {{
-      this.tags = foodService.getAllTags();
-    };
+  constructor(foodService:FoodService) {
+    foodService.getAllTags().subscribe(serverTags => {
+      this.tags = serverTags;
+    });
    }
 
   ngOnInit(): void {
