@@ -1,18 +1,17 @@
 <header>
-  <link rel="stylesheet" href="header.component.css">
   <div class='container'>
    <a routerLink="/" class="logo">Queenfood Restaurant</a>
   <nav>
     <ul>
-      <li>
+      <li *ngIf="!isAuth">
         <a routerLink="/login">Login</a>
       </li>
-      <li class="menu-container">
-        <a routerLink="/dashboard">Jaishini</a>
+      <li *ngIf="isAuth"class="menu-container">
+        <a routerLink="/dashboard">{{user.name}}</a>
         <div class="menu">
           <a routerLink="/profile">Profile</a>
           <a routerLink="/orders">Orders</a>
-          <a> Logout </a>
+          <a (click)="logout()">Logout </a>
         </div>
       </li>
       <li>

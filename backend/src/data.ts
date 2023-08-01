@@ -64,7 +64,7 @@ export const sample_foods: any[] =[
       stars:4.4,
       imageUrl: 'assets/food-6.jpg',
       tags: ['Briyani','Lunch'],
-  }
+  },
      
 ]
 export const sample_tags: any[] = [
@@ -78,3 +78,26 @@ export const sample_tags: any[] = [
   
 ]
   
+export const sample_users: any[] = [
+  {
+    name: "Jaishini",
+    email: "jai@gmail.com",
+    password: "12345",
+    address: "Tiruchengode",
+    isAdmin: true,
+  },
+  {
+    name: "kirija",
+    email: "kircse@gmail.com",
+    password: "12345",
+    address: "Erode",
+    isAdmin: false,
+  },
+  {
+    name: "srinavaneetha",
+    email: "sri@gmail.com",
+    password: "12345",
+    address: "Tiruchengode",
+    isAdmin: false,
+  },
+];

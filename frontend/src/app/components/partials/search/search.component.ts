@@ -19,7 +19,7 @@ ngOnInit(): void {
 
   search(term:string):void{
     if(term)
-  this.router.navigateByUrl('/serach/' + term);
+  this.router.navigateByUrl('/search/' + term);
   }
 }
 

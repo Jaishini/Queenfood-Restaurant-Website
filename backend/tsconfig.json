@@ -1,5 +1,5 @@
 {
-    "compilarOptions": {
+    "compilerOptions": {
       "module": "CommonJS",
       "moduleResolution": "node",
       "strict": true,
